@@ -1,0 +1,12 @@
+{
+  "name": "lecture-notes-generator",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node backend/app.js",
+    "client": "cd frontend && npm start"
+  },
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
